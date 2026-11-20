@@ -28,8 +28,8 @@ SIFT-Image-Stitching-main/
 ├── RANSAC_Homography_Stitching.ipynb     # Notebook 2: ghép 2 ảnh
 ├── Panorama_Stitching.ipynb              # Notebook 3: ghép 8 ảnh
 ├── images/                       # Ảnh thử nghiệm
-├── results/                      # Ảnh kết quả của test (tự sinh khi chạy)
-└── _backup_goc/                  # Bản gốc của repo trước khi viết lại (để đối chiếu)
+└── results/                      # Ảnh kết quả (tự sinh khi chạy)
+    └── _exp/                     # Thí nghiệm cho báo cáo: analyze.py, fail.py
 ```
 
 ---
@@ -144,6 +144,13 @@ jupyter notebook
 ```
 
 Mở ở **thư mục gốc repo**, theo thứ tự Notebook 1 → 2 → 3. Notebook đã được viết lại để gọi code tự viết trong `python/`.
+
+### 4.5. Thí nghiệm cho báo cáo
+
+```bash
+python results/_exp/analyze.py   # đặc điểm dữ liệu, tỉ lệ inlier, sai số chiếu lại
+python results/_exp/fail.py      # 6 ca thử khó, ảnh lưu trong results/_exp/
+```
 
 ---
 
